@@ -151,7 +151,58 @@ const lectureData = {
     
     // 第五讲和第六讲内容
     3: [
-        // 待添加数据
+        // 讲义5 - 控制语句
+        { term: "Control statements", pos: "n.", phonetic: "/kənˈtroʊl ˈsteɪtmənts/", definition: "控制语句：修改程序流程的语句" },
+        { term: "if statements", pos: "n.", phonetic: "/ɪf ˈsteɪtmənts/", definition: "if语句：条件执行语句" },
+        { term: "else-if", pos: "n.", phonetic: "/ˈɛls-ɪf/", definition: "否则-如果：条件分支语句" },
+        { term: "switch statements", pos: "n.", phonetic: "/swɪtʃ ˈsteɪtmənts/", definition: "switch语句：多路分支语句" },
+        { term: "Scanner", pos: "n.", phonetic: "/ˈskænər/", definition: "扫描器：Java中用于读取输入的类" },
+        { term: "break", pos: "n.", phonetic: "/breɪk/", definition: "跳出：终止循环或switch的语句" },
+        { term: "continue", pos: "n.", phonetic: "/kənˈtɪnjuː/", definition: "继续：跳过当前循环迭代的语句" },
+        { term: "while loops", pos: "n.", phonetic: "/waɪl luːps/", definition: "while循环：条件循环" },
+        { term: "do-while loops", pos: "n.", phonetic: "/duː-waɪl luːps/", definition: "do-while循环：至少执行一次的条件循环" },
+        { term: "for loops", pos: "n.", phonetic: "/fɔːr luːps/", definition: "for循环：带初始化、条件和迭代部分的循环" },
+        { term: "for-each loops", pos: "n.", phonetic: "/fɔːr-iːtʃ luːps/", definition: "for-each循环：遍历集合的循环" },
+        { term: "Iteration", pos: "n.", phonetic: "/ˌɪtəˈreɪʃən/", definition: "迭代：重复执行一段代码" },
+        { term: "Empty statements", pos: "n.", phonetic: "/ˈɛmpti ˈsteɪtmənts/", definition: "空语句：没有操作的语句(;)" },
+        { term: "boolean-expression", pos: "n.", phonetic: "/ˈbuːliən ɪkˈsprɛʃən/", definition: "布尔表达式：产生true或false的表达式" },
+        
+        // 讲义6 - 类和对象
+        { term: "Classes", pos: "n.", phonetic: "/ˈklæsɪz/", definition: "类：Java中基本的代码结构单元" },
+        { term: "Objects", pos: "n.", phonetic: "/ˈɒbdʒɛkts/", definition: "对象：类的实例" },
+        { term: "Fields", pos: "n.", phonetic: "/fiːldz/", definition: "字段：类中的数据成员" },
+        { term: "Methods", pos: "n.", phonetic: "/ˈmɛθədz/", definition: "方法：类中的函数" },
+        { term: "Constructors", pos: "n.", phonetic: "/kənˈstrʌktərz/", definition: "构造函数：创建对象实例的特殊方法" },
+        { term: "Parameters", pos: "n.", phonetic: "/pəˈræmɪtərz/", definition: "参数：传递给方法的值" },
+        { term: "Arguments", pos: "n.", phonetic: "/ˈɑːrɡjumənts/", definition: "参数值：调用方法时传递的实际值" },
+        { term: "return statement", pos: "n.", phonetic: "/rɪˈtɜːrn ˈsteɪtmənt/", definition: "返回语句：从方法返回值" },
+        { term: "this", pos: "n.", phonetic: "/ðɪs/", definition: "关键字：引用当前对象的指针" },
+        { term: "reference", pos: "n.", phonetic: "/ˈrɛfərəns/", definition: "引用：指向对象的指针" },
+        { term: "null", pos: "n.", phonetic: "/nʌl/", definition: "空：表示引用不指向任何对象" },
+        { term: "instantiation", pos: "n.", phonetic: "/ɪnˌstænʃiˈeɪʃən/", definition: "实例化：创建类的实例" },
+        { term: "new", pos: "n.", phonetic: "/njuː/", definition: "关键字：创建新对象" },
+        
+        // 四级及以上词汇
+        { term: "abstraction", pos: "n.", phonetic: "/æbˈstrækʃən/", definition: "抽象：将复杂系统简化为基本概念的过程" },
+        { term: "specification", pos: "n.", phonetic: "/ˌspɛsɪfɪˈkeɪʃən/", definition: "规范：详细描述某事物特性的文档" },
+        { term: "distinguish", pos: "v.", phonetic: "/dɪˈstɪŋɡwɪʃ/", definition: "区分：辨别不同之处" },
+        { term: "iterate", pos: "v.", phonetic: "/ˈɪtəreɪt/", definition: "迭代：重复执行某过程" },
+        { term: "execute", pos: "v.", phonetic: "/ˈɛksɪkjuːt/", definition: "执行：运行或实现一个程序或指令" },
+        { term: "modification", pos: "n.", phonetic: "/ˌmɒdɪfɪˈkeɪʃən/", definition: "修改：改变或调整某事物" },
+        { term: "sequence", pos: "n.", phonetic: "/ˈsiːkwəns/", definition: "序列：有特定顺序的一系列项" },
+        { term: "expression", pos: "n.", phonetic: "/ɪkˈsprɛʃən/", definition: "表达式：在编程中产生值的代码片段" },
+        { term: "implementation", pos: "n.", phonetic: "/ˌɪmplɪmɛnˈteɪʃən/", definition: "实现：执行或完成某事的行为" },
+        { term: "analogous", pos: "adj.", phonetic: "/əˈnæləɡəs/", definition: "类似的：在某些方面相似的" },
+        { term: "instantiate", pos: "v.", phonetic: "/ɪnˈstænʃieɪt/", definition: "实例化：创建类的实例" },
+        { term: "alternative", pos: "n.", phonetic: "/ɔːlˈtɜːrnətɪv/", definition: "替代：可供选择的选项" },
+        { term: "numeric", pos: "adj.", phonetic: "/nuːˈmɛrɪk/", definition: "数值的：与数字相关的" },
+        { term: "concept", pos: "n.", phonetic: "/ˈkɒnsɛpt/", definition: "概念：抽象或一般的想法" },
+        { term: "syntax", pos: "n.", phonetic: "/ˈsɪntæks/", definition: "语法：语言的结构规则" },
+        { term: "execution", pos: "n.", phonetic: "/ˌɛksɪˈkjuːʃən/", definition: "执行：运行程序或指令" },
+        { term: "compilation", pos: "n.", phonetic: "/ˌkɒmpɪˈleɪʃən/", definition: "编译：将源代码转换为可执行代码" },
+        { term: "context", pos: "n.", phonetic: "/ˈkɒntɛkst/", definition: "上下文：框架或环境，用于理解事物" },
+        { term: "instance", pos: "n.", phonetic: "/ˈɪnstəns/", definition: "实例：类的具体对象" },
+        { term: "initialize", pos: "v.", phonetic: "/ɪˈnɪʃəlaɪz/", definition: "初始化：设置初始值" }
     ],
     
     // 第七讲内容
