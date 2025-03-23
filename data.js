@@ -1,0 +1,103 @@
+// 各讲义的专业术语和词汇
+const lectureData = {
+    // 第一讲和第二讲内容
+    1: [
+        { term: "Object Oriented Programming (OOP)", pos: "n.", phonetic: "/ˈɒbdʒɛkt ˈɔːrɪəntɪd ˈproʊɡræmɪŋ/", definition: "面向对象编程" },
+        { term: "Java", pos: "n.", phonetic: "/ˈdʒɑːvə/", definition: "Java编程语言" },
+        { term: "Virtual Machine (VM)", pos: "n.", phonetic: "/ˈvɜːrtʃuəl məˈʃiːn/", definition: "虚拟机" },
+        { term: "Bytecode", pos: "n.", phonetic: "/ˈbaɪtkoʊd/", definition: "字节码" },
+        { term: "JDK (Java Development Kit)", pos: "n.", phonetic: "/ˌdʒeɪ diː ˈkeɪ/", definition: "Java开发工具包" },
+        { term: "Class", pos: "n.", phonetic: "/klæs/", definition: "类" },
+        { term: "Object", pos: "n.", phonetic: "/ˈɒbdʒɛkt/", definition: "对象" },
+        { term: "Method", pos: "n.", phonetic: "/ˈmɛθəd/", definition: "方法" },
+        { term: "Parameter", pos: "n.", phonetic: "/pəˈræmɪtər/", definition: "参数" },
+        { term: "Statement", pos: "n.", phonetic: "/ˈsteɪtmənt/", definition: "语句" },
+        { term: "Argument", pos: "n.", phonetic: "/ˈɑːrɡjumənt/", definition: "参数（传递给方法的值）" },
+        { term: "String", pos: "n.", phonetic: "/strɪŋ/", definition: "字符串" },
+        { term: "Array", pos: "n.", phonetic: "/əˈreɪ/", definition: "数组" },
+        { term: "Concatenation", pos: "n.", phonetic: "/kənˌkætəˈneɪʃən/", definition: "连接" },
+        { term: "For loop", pos: "n.", phonetic: "/fɔːr luːp/", definition: "for循环" },
+        { term: "Method call", pos: "n.", phonetic: "/ˈmɛθəd kɔːl/", definition: "方法调用" },
+        { term: "Method header", pos: "n.", phonetic: "/ˈmɛθəd ˈhɛdər/", definition: "方法头" },
+        { term: "Method body", pos: "n.", phonetic: "/ˈmɛθəd ˈbɒdi/", definition: "方法体" },
+        { term: "Compiler", pos: "n.", phonetic: "/kəmˈpaɪlər/", definition: "编译器" },
+        { term: "Just-in-time compiler", pos: "n.", phonetic: "/ˌdʒʌst ɪn ˈtaɪm kəmˈpaɪlər/", definition: "即时编译器" },
+        { term: "IDE (Integrated Development Environment)", pos: "n.", phonetic: "/ˌaɪ diː ˈiː/", definition: "集成开发环境" },
+        { term: "Portability", pos: "n.", phonetic: "/ˌpɔːrtəˈbɪləti/", definition: "可移植性" },
+        { term: "Sophisticated", pos: "adj.", phonetic: "/səˈfɪstɪkeɪtɪd/", definition: "复杂的、精密的" },
+        { term: "Compile", pos: "v.", phonetic: "/kəmˈpaɪl/", definition: "编译" },
+        { term: "Interpreter/interpreted", pos: "n./adj.", phonetic: "/ɪnˈtɜːrprətər/", definition: "解释器/被解释的" },
+        { term: "Generate", pos: "v.", phonetic: "/ˈdʒɛnəreɪt/", definition: "生成" },
+        { term: "Execute", pos: "v.", phonetic: "/ˈɛksɪkjuːt/", definition: "执行" },
+        { term: "Comprise", pos: "v.", phonetic: "/kəmˈpraɪz/", definition: "包含、由...组成" },
+        { term: "Iteration/iterate", pos: "n./v.", phonetic: "/ˌɪtəˈreɪʃən/", definition: "迭代/重复" },
+        { term: "Concatenate", pos: "v.", phonetic: "/kənˈkætəneɪt/", definition: "连接" },
+        { term: "Interface", pos: "n.", phonetic: "/ˈɪntərfeɪs/", definition: "接口" },
+        { term: "Implement", pos: "v.", phonetic: "/ˈɪmplɪmɛnt/", definition: "实现" },
+        { term: "Integrate", pos: "v.", phonetic: "/ˈɪntɪɡreɪt/", definition: "集成" },
+        { term: "Syntax", pos: "n.", phonetic: "/ˈsɪntæks/", definition: "语法" },
+        { term: "Initially", pos: "adv.", phonetic: "/ɪˈnɪʃəli/", definition: "最初" },
+        { term: "Reputation", pos: "n.", phonetic: "/ˌrɛpjuˈteɪʃən/", definition: "声誉" },
+        { term: "Competitive", pos: "adj.", phonetic: "/kəmˈpɛtɪtɪv/", definition: "有竞争力的" },
+        { term: "Implementation", pos: "n.", phonetic: "/ˌɪmplɪmɛnˈteɪʃən/", definition: "实现" },
+        { term: "Instance", pos: "n.", phonetic: "/ˈɪnstəns/", definition: "实例" },
+        { term: "Community", pos: "n.", phonetic: "/kəˈmjuːnɪti/", definition: "社区" },
+        { term: "Definition", pos: "n.", phonetic: "/ˌdɛfɪˈnɪʃən/", definition: "定义" },
+        { term: "Variable", pos: "n.", phonetic: "/ˈvɛəriəbl/", definition: "变量" },
+        { term: "Variable declaration", pos: "n.", phonetic: "/ˈvɛəriəbl ˌdɛkləˈreɪʃən/", definition: "变量声明" },
+        { term: "Variable assignment", pos: "n.", phonetic: "/ˈvɛəriəbl əˈsaɪnmənt/", definition: "变量赋值" },
+        { term: "Type", pos: "n.", phonetic: "/taɪp/", definition: "类型" },
+        { term: "int", pos: "n.", phonetic: "/ɪnt/", definition: "整数类型" },
+        { term: "double", pos: "n.", phonetic: "/ˈdʌbl/", definition: "双精度浮点数类型" },
+        { term: "float", pos: "n.", phonetic: "/floʊt/", definition: "单精度浮点数类型" },
+        { term: "boolean expression", pos: "n.", phonetic: "/ˈbuːliən ɪkˈsprɛʃən/", definition: "布尔表达式" },
+        { term: "if statement", pos: "n.", phonetic: "/ɪf ˈsteɪtmənt/", definition: "if语句" },
+        { term: "else if statement", pos: "n.", phonetic: "/ɛls ɪf ˈsteɪtmənt/", definition: "else if语句" },
+        { term: "else statement", pos: "n.", phonetic: "/ɛls ˈsteɪtmənt/", definition: "else语句" },
+        { term: "code block", pos: "n.", phonetic: "/koʊd blɒk/", definition: "代码块" },
+        { term: "while loop", pos: "n.", phonetic: "/waɪl luːp/", definition: "while循环" },
+        { term: "do-while loop", pos: "n.", phonetic: "/duː waɪl luːp/", definition: "do-while循环" },
+        { term: "for-each loop", pos: "n.", phonetic: "/fɔːr iːtʃ luːp/", definition: "for-each循环" },
+        { term: "increment operator", pos: "n.", phonetic: "/ˈɪnkrəmənt ˈɒpəreɪtər/", definition: "自增运算符 (i++)" },
+        { term: "arithmetic operators", pos: "n.", phonetic: "/əˌrɪθˈmɛtɪk ˈɒpəreɪtərz/", definition: "算术运算符 (+, -, *, /, %)" },
+        { term: "relational operators", pos: "n.", phonetic: "/rɪˈleɪʃənl ˈɒpəreɪtərz/", definition: "关系运算符 (==, !=, <, >, <=, >=)" },
+        { term: "Scanner", pos: "n.", phonetic: "/ˈskænər/", definition: "扫描器类" },
+        { term: "import", pos: "v.", phonetic: "/ɪmˈpɔːrt/", definition: "导入" },
+        { term: "Java Class Library", pos: "n.", phonetic: "/ˈdʒɑːvə klæs ˈlaɪbrəri/", definition: "Java类库" },
+        { term: "Conditional", pos: "adj.", phonetic: "/kənˈdɪʃənl/", definition: "条件性的" },
+        { term: "Compatible", pos: "adj.", phonetic: "/kəmˈpætəbl/", definition: "兼容的" },
+        { term: "Construct/constructed", pos: "v./adj.", phonetic: "/kənˈstrʌkt/", definition: "构造/被构造的" },
+        { term: "Idiomatic", pos: "adj.", phonetic: "/ˌɪdiəˈmætɪk/", definition: "惯用的、地道的" },
+        { term: "Execute/executed", pos: "v./adj.", phonetic: "/ˈɛksɪkjuːt/", definition: "执行/被执行的" },
+        { term: "Declaration", pos: "n.", phonetic: "/ˌdɛkləˈreɪʃən/", definition: "声明" },
+        { term: "Assignment", pos: "n.", phonetic: "/əˈsaɪnmənt/", definition: "赋值" },
+        { term: "Representation/represented", pos: "n./adj.", phonetic: "/ˌrɛprɪzɛnˈteɪʃən/", definition: "表示/被表示的" },
+        { term: "Expression", pos: "n.", phonetic: "/ɪkˈsprɛʃən/", definition: "表达式" },
+        { term: "Increment", pos: "n.", phonetic: "/ˈɪnkrəmənt/", definition: "增量" },
+        { term: "Initialize", pos: "v.", phonetic: "/ɪˈnɪʃəlaɪz/", definition: "初始化" },
+        { term: "Concatenate/concatenation", pos: "v./n.", phonetic: "/kənˈkætəneɪt/", definition: "连接/串联" },
+        { term: "Multiple", pos: "adj.", phonetic: "/ˈmʌltəpl/", definition: "多个的" },
+        { term: "Decimal", pos: "n.", phonetic: "/ˈdɛsɪməl/", definition: "十进制" },
+        { term: "Integer", pos: "n.", phonetic: "/ˈɪntɪdʒər/", definition: "整数" },
+        { term: "Impossible", pos: "adj.", phonetic: "/ɪmˈpɒsəbl/", definition: "不可能的" },
+        { term: "Shorthand", pos: "n.", phonetic: "/ˈʃɔːrthænd/", definition: "简写" },
+        { term: "Terminal", pos: "n.", phonetic: "/ˈtɜːrmɪnl/", definition: "终端" },
+        { term: "Calculate", pos: "v.", phonetic: "/ˈkælkjuleɪt/", definition: "计算" },
+        { term: "Syntax-sugar", pos: "n.", phonetic: "/ˈsɪntæks ˈʃʊɡər/", definition: "语法糖" }
+    ],
+    
+    // 第三讲和第四讲内容
+    2: [
+        // 待添加数据
+    ],
+    
+    // 第五讲和第六讲内容
+    3: [
+        // 待添加数据
+    ],
+    
+    // 第七讲内容
+    4: [
+        // 待添加数据
+    ]
+}; 
