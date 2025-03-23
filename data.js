@@ -207,6 +207,57 @@ const lectureData = {
     
     // 第七讲内容
     4: [
-        // 待添加数据
+        // Java编程相关术语
+        { term: "Object", pos: "n.", phonetic: "/ˈɒbdʒɛkt/", definition: "对象" },
+        { term: "Array", pos: "n.", phonetic: "/əˈreɪ/", definition: "数组" },
+        { term: "Garbage collection", pos: "n.", phonetic: "/ˈɡɑːrbɪdʒ kəˈlɛkʃən/", definition: "垃圾回收" },
+        { term: "Reference", pos: "n.", phonetic: "/ˈrɛfərəns/", definition: "引用" },
+        { term: "Primitive types", pos: "n.", phonetic: "/ˈprɪmɪtɪv taɪps/", definition: "基本数据类型" },
+        { term: "Non-primitive variables", pos: "n.", phonetic: "/nɒn-ˈprɪmɪtɪv ˈveəriəblz/", definition: "非基本类型变量" },
+        { term: "Zero indexing", pos: "n.", phonetic: "/ˈzɪərəʊ ˈɪndɛksɪŋ/", definition: "零索引" },
+        { term: "Multidimensional arrays", pos: "n.", phonetic: "/ˌmʌltidɪˈmɛnʃənl əˈreɪz/", definition: "多维数组" },
+        { term: "For-each loop", pos: "n.", phonetic: "/fɔːr-iːtʃ luːp/", definition: "foreach循环" },
+        { term: "Scope", pos: "n.", phonetic: "/skəʊp/", definition: "作用域" },
+        { term: "Method", pos: "n.", phonetic: "/ˈmɛθəd/", definition: "方法" },
+        { term: "Class", pos: "n.", phonetic: "/klɑːs/", definition: "类" },
+        { term: "Constructor", pos: "n.", phonetic: "/kənˈstrʌktər/", definition: "构造函数" },
+        { term: "Initialisation", pos: "n.", phonetic: "/ɪˌnɪʃəlaɪˈzeɪʃən/", definition: "初始化" },
+        { term: "Scanner", pos: "n.", phonetic: "/ˈskænər/", definition: "扫描器" },
+        { term: "Histogram", pos: "n.", phonetic: "/ˈhɪstəɡræm/", definition: "直方图" },
+        { term: "Variable", pos: "n.", phonetic: "/ˈveəriəbl/", definition: "变量" },
+        { term: "Inheritance", pos: "n.", phonetic: "/ɪnˈhɛrɪtəns/", definition: "继承，讲义提到但未详细讲解" },
+        { term: "Polymorphism", pos: "n.", phonetic: "/ˌpɒliˈmɔːrfɪzəm/", definition: "多态，讲义提到但未详细讲解" },
+        
+        // 数组操作相关术语
+        { term: "Indexing", pos: "n.", phonetic: "/ˈɪndɛksɪŋ/", definition: "索引" },
+        { term: "Length", pos: "n.", phonetic: "/lɛŋθ/", definition: "长度" },
+        { term: "Element", pos: "n.", phonetic: "/ˈɛlɪmənt/", definition: "元素" },
+        { term: "Suffix of dimensions", pos: "n.", phonetic: "/ˈsʌfɪks əv dɪˈmɛnʃənz/", definition: "维度后缀" },
+        { term: "Arrays of arrays", pos: "n.", phonetic: "/əˈreɪz əv əˈreɪz/", definition: "数组的数组" },
+        { term: "Array initialization", pos: "n.", phonetic: "/əˈreɪ ɪˌnɪʃəlaɪˈzeɪʃən/", definition: "数组初始化" },
+        { term: "Nested loops", pos: "n.", phonetic: "/ˈnɛstɪd luːps/", definition: "嵌套循环" },
+        
+        // 英语四级及以上的词汇
+        { term: "Analogous", pos: "adj.", phonetic: "/əˈnæləɡəs/", definition: "类似的" },
+        { term: "Suffix", pos: "n.", phonetic: "/ˈsʌfɪks/", definition: "后缀" },
+        { term: "Initialize", pos: "v.", phonetic: "/ɪˈnɪʃəlaɪz/", definition: "初始化" },
+        { term: "Iteration", pos: "n.", phonetic: "/ˌɪtəˈreɪʃən/", definition: "迭代" },
+        { term: "Implement", pos: "v.", phonetic: "/ˈɪmplɪmənt/", definition: "实现" },
+        { term: "Increment", pos: "n.", phonetic: "/ˈɪnkrɪmənt/", definition: "增量" },
+        { term: "Frequency", pos: "n.", phonetic: "/ˈfriːkwənsi/", definition: "频率" },
+        { term: "Efficiency", pos: "n.", phonetic: "/ɪˈfɪʃənsi/", definition: "效率" },
+        { term: "Reclaimed", pos: "adj.", phonetic: "/rɪˈkleɪmd/", definition: "回收" },
+        { term: "Specified", pos: "adj.", phonetic: "/ˈspɛsɪfaɪd/", definition: "指定的" },
+        { term: "Dynamically", pos: "adv.", phonetic: "/daɪˈnæmɪkli/", definition: "动态地" },
+        { term: "Automatically", pos: "adv.", phonetic: "/ˌɔːtəˈmætɪkli/", definition: "自动地" },
+        { term: "Numeric", pos: "adj.", phonetic: "/njuːˈmɛrɪk/", definition: "数值的" },
+        { term: "Process", pos: "v.", phonetic: "/ˈprəʊsɛs/", definition: "处理" },
+        { term: "Primitive", pos: "adj.", phonetic: "/ˈprɪmɪtɪv/", definition: "原始的" },
+        { term: "Recreational", pos: "adj.", phonetic: "/ˌrɛkriˈeɪʃənl/", definition: "娱乐的" },
+        { term: "Interact", pos: "v.", phonetic: "/ˌɪntərˈækt/", definition: "交互" },
+        { term: "Formulate", pos: "v.", phonetic: "/ˈfɔːmjʊleɪt/", definition: "制定" },
+        { term: "Consistent", pos: "adj.", phonetic: "/kənˈsɪstənt/", definition: "一致的" },
+        { term: "Molecular", pos: "adj.", phonetic: "/məˈlɛkjʊlər/", definition: "分子的" },
+        { term: "Capacitor", pos: "n.", phonetic: "/kəˈpæsɪtər/", definition: "电容器" }
     ]
 }; 
